@@ -1,0 +1,74 @@
+/* main stuff */
+
+:root {
+    --main-color: #FFD700;
+}
+
+body {
+    background-color: #dedede;
+}
+
+
+/* start of navbar section */
+
+#navbar {
+    /* background-color: rgb(87, 87, 87); */
+    background-color: transparent;
+}
+
+#navbar .navbar-brand {
+    font-size: 22px;
+}
+
+#navbar a {
+    color: var(--main-color);
+    transition: all 0.3s;
+}
+
+#navbar a:hover {
+    transform: scale(0.85);
+}
+
+#navbar .nav-item span {
+    font-size: 22px;
+}
+
+
+/* start of home hero section */
+
+#header .homeInit {
+    height: 100vh;
+    width: 100%;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+#header .slider1 {
+    background-image: url(../Images/home-bg3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#header .slider2 {
+    background-image: url(../Images/home-bg2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#header .slider3 {
+    background-image: url(../Images/home-bg4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+#header .overlay .h1 {
+    font-size: 64px;
+}
+
+
+/* dddsd */

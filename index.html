@@ -1,18 +1,151 @@
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güzul</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- boot strap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
+    <!-- custom style -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- owl charosel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 </head>
 
 <body>
     <!-- STAER OF NAVBAR -->
-    <nav></nav>
+    <nav class="navbar navbar-expand-sm fixed-top" id="navbar">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"><i class="fas fa-gift"></i> Güzul</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fas fa-bars"></i>
+             </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item py-1 mr-2">
+                        <a class="nav-link" href="#home"> Home</a>
+                    </li>
+                    <li class="nav-item py-1 mr-2">
+                        <a class="nav-link text-capitalize" href="#register"> register</a>
+                    </li>
+                    <li class="nav-item py-1 mr-2">
+                        <a class="nav-link text-capitalize" href="#about"> about us</a>
+                    </li>
+                    <li class="nav-item py-1">
+                        <a class="nav-link text-capitalize" href="#contact"> contact us</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#cart"> <span class="fas fa-shopping-cart py-1 px-2 mr-3"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-capitalize" href="#cart">
+                            <span class="fab fa-gratipay py-1 px-2"></span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- navbar links 2 -->
+
+        </div>
+    </nav>
 
     <!-- START OF HEADER -->
-    <section id="header"></section>
+    <header id="header">
+        <div class="owl-carousel" id="hero-carousel">
+            <div class="homeInit slider1">
+                <div class="overlay d-flex flex-column justify-content-center">
+                    <div class="container">
+                        <div class="content ml-2">
+                            <h1 class="h1 font-weight-bolder text-capitalize">welcome to <br> güzul</h1>
+                            <p class="h3 w-75 mt-3 mb-4">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                            <a href="" class="btn btn-danger">Shop Now</a>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+            <div class="homeInit slider2">
+                <div class="overlay d-flex flex-column justify-content-center align-items-center">
+                    <div class="container">
+                        <div class="content ml-2 text-center">
+                            <h1 class="h1 font-weight-bolder text-capitalize">welcome to <br> güzul</h1>
+                            <p class="h3 w-75 mt-3 mb-4 mx-auto">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                            <a href="" class="btn btn-danger">Shop Now</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="homeInit slider3">
+                <div class="overlay d-flex flex-column justify-content-center">
+                    <div class="container">
+                        <div class="content ml-2 text-right">
+                            <h1 class="h1 font-weight-bolder text-capitalize">welcome to <br> güzul</h1>
+                            <p class="h3 w-75 mt-3 mb-4 ml-auto">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                            <a href="" class="btn btn-danger">Shop Now</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- test -->
+    <div class="owl-carousel" id="owl-carousel">
+        <div class="homeInit slider1">
+            <div class="overlay d-flex flex-column justify-content-center">
+                <div class="container">
+                    <div class="content ml-2">
+                        <h1 class="h1 font-weight-bolder text-capitalize">welcome to <br> güzul</h1>
+                        <p class="h3 w-75 mt-3 mb-4">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                        <a href="" class="btn btn-danger">Shop Now</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="homeInit slider2">
+            <div class="overlay d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="content ml-2 text-center">
+                        <h1 class="h1 font-weight-bolder text-capitalize">welcome to <br> güzul</h1>
+                        <p class="h3 w-75 mt-3 mb-4 mx-auto">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                        <a href="" class="btn btn-danger">Shop Now</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="homeInit slider3">
+            <div class="overlay d-flex flex-column justify-content-center">
+                <div class="container">
+                    <div class="content ml-2 text-right">
+                        <h1 class="h1 font-weight-bolder text-capitalize">welcome to <br> güzul</h1>
+                        <p class="h3 w-75 mt-3 mb-4 ml-auto">See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
+                        <a href="" class="btn btn-danger">Shop Now</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- START OF SLIDER 1 -->
     <section id="slider1"></section>
 
@@ -35,7 +168,17 @@
     <!-- START OF FOOTER-->
     <footer></footer>
 
+
+    <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- owl-charosel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
