@@ -1,7 +1,8 @@
 /* main stuff */
 
 :root {
-    --main-color: #FFD700;
+    --main-color: #DDA853;
+    /* #DDA853 #beb20e */
 }
 
 body {
@@ -14,6 +15,8 @@ body {
 #navbar {
     /* background-color: rgb(87, 87, 87); */
     background-color: transparent;
+    /* background-color: #f8f8f8; */
+    /* background-color: #08546C; */
 }
 
 #navbar .navbar-brand {
@@ -33,11 +36,15 @@ body {
     font-size: 22px;
 }
 
+#navbar .link1 {
+    color: #f8f8f8;
+}
+
 
 /* start of home hero section */
 
 #header .homeInit {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 
@@ -49,19 +56,19 @@ body {
 }
 
 #header .slider1 {
-    background-image: url(../Images/home-bg3.jpg);
+    background-image: url(../Images/home-bg3.webp);
     background-size: cover;
     background-position: center center;
 }
 
 #header .slider2 {
-    background-image: url(../Images/home-bg2.jpg);
+    background-image: url(../Images/home-bg2.webp);
     background-size: cover;
     background-position: center center;
 }
 
 #header .slider3 {
-    background-image: url(../Images/home-bg4.jpg);
+    background-image: url(../Images/home-bg4.webp);
     background-size: cover;
     background-position: center center;
 }
@@ -72,3 +79,9 @@ body {
 
 
 /* dddsd */
+
+.bta3 {
+    /* width: 500px; */
+    height: 200px;
+    background-color: tomato;
+}

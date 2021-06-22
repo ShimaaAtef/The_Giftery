@@ -1,4 +1,4 @@
-// call owl carosel plugin
+// call owl carousel plugin
 $(document).ready(function() {
     $("#hero-carousel").owlCarousel({
         items: 1,
@@ -6,7 +6,6 @@ $(document).ready(function() {
         animateOut: 'fadeOut',
         autoplay: true,
         autoplayTimeout: 3000,
-        nav: true,
         responsive: {
             0: {
                 items: 1,
