@@ -1,22 +1,84 @@
 /* main stuff */
 
 :root {
-    --main-color: #DDA853;
-    /* #DDA853 #beb20e */
+    --main-color: #FE980F;
+    --nav-color: #08546C;
+    /* #DDA853 #beb20e FE980F */
 }
 
 body {
     background-color: #dedede;
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn-main {
+    background-color: var(--nav-color);
+    color: var(--main-color);
+    transition: all 0.4s;
+}
+
+.btn-main:hover {
+    color: wheat;
+}
+
+.bg-main {
+    color: var(--nav-color);
+}
+
+.nav-main {
+    background-color: var(--nav-color) !important;
+    position: fixed;
+    visibility: hidden;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    /* padding: 10px 0px; */
+    background: #ffffff;
+    z-index: 0;
+    transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    -ms-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -op-animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -ms-animation-duration: 500ms;
+    -moz-animation-duration: 500ms;
+    -op-animation-duration: 500ms;
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+    -ms-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -op-animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -ms-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -op-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.brdr {
+    width: 60px;
+    height: 2px;
+    background-color: var(--main-color);
 }
 
 
 /* start of navbar section */
 
 #navbar {
-    /* background-color: rgb(87, 87, 87); */
+    /* background-color: var(--nav-color); */
     background-color: transparent;
     /* background-color: #f8f8f8; */
-    /* background-color: #08546C; */
 }
 
 #navbar .navbar-brand {
@@ -40,11 +102,15 @@ body {
     color: #f8f8f8;
 }
 
+#navbar .navbar-toggler {
+    color: var(--main-color);
+}
+
 
 /* start of home hero section */
 
 #header .homeInit {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -78,10 +144,153 @@ body {
 }
 
 
-/* dddsd */
+/* ? random stuff */
 
-.bta3 {
-    /* width: 500px; */
-    height: 200px;
-    background-color: tomato;
+.hide-ele {
+    transform: scale(0);
+    /* display: none; */
+    transition: all 0.5s ease-in-out;
+    margin: 0;
+}
+
+
+/* products section */
+
+#products .products_list .brdr {
+    width: 50px;
+}
+
+#products .products_list .active {
+    border-radius: 15px;
+    background: var(--nav-color);
+    color: var(--main-color) !important;
+    /* background: #40403E;
+    border-bottom: 1px solid #FE980F; */
+}
+
+#products .products_list .nav-item span {
+    color: var(--nav-color);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#products .products_list .nav-item span:hover {
+    border-radius: 15px;
+    color: var(--main-color);
+}
+
+#products .products_items .product_card {
+    transition: all 0.5s ease-in-out;
+}
+
+#products .product_card {
+    background-color: #fff;
+    border-radius: 9px;
+}
+
+#products .action_btns,
+#products .label {
+    height: 37px;
+}
+
+#products .action_btns i {
+    font-size: 1.25em;
+}
+
+#products .imgs {
+    height: 250px;
+}
+
+#products .imgs img {
+    border-radius: 9px 9px 0 0;
+    width: 100%;
+    height: 250px;
+}
+
+#products .section-heading a {
+    color: var(--main-color);
+}
+
+
+/* category section */
+
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+
+/* Horizontal line */
+
+#accordionExample .collapsible-link::before {
+    content: '';
+    width: 14px;
+    height: 2px;
+    background: var(--main-color);
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 1rem;
+    display: block;
+    transition: all 0.3s;
+}
+
+
+/* Vertical line */
+
+#accordionExample .collapsible-link::after {
+    content: '';
+    width: 2px;
+    height: 14px;
+    background: var(--main-color);
+    position: absolute;
+    top: calc(50% - 7px);
+    right: calc(1rem + 6px);
+    display: block;
+    transition: all 0.3s;
+}
+
+#accordionExample .collapsible-link[aria-expanded='true']::after {
+    transform: rotate(90deg) translateX(-1px);
+}
+
+#accordionExample .collapsible-link[aria-expanded='true']::before {
+    transform: rotate(180deg);
+}
+
+#accordionExample .card {
+    border-color: transparent;
+}
+
+#accordionExample .card .card-header a {
+    color: var(--main-color);
+}
+
+
+/* * Footer */
+
+footer .list-group-item {
+    border: 0 !important;
+    background-color: transparent !important;
+}
+
+footer .footer_main {
+    background-color: #202020;
+    color: white;
+}
+
+footer .footer_main .icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.25em;
+    border-radius: 50%;
+    border: 1px solid #f8f8f8;
+}
+
+footer .footer_sec {
+    background-color: #2C2C2C;
+    color: white;
 }
