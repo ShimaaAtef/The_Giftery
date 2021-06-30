@@ -1,0 +1,49 @@
+/* import the main style */
+
+@import "style.css";
+
+/* start of about */
+
+#about {
+    background: url(../Images/about-us.webp);
+    background-size: cover;
+    background-position: center center;
+    height: 65vh;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.about_us h3 {
+    color: var(--nav-color);
+    font-weight: 600;
+}
+
+
+/* * end of about */
+
+
+/* start of contact */
+
+#contact_us {
+    background-image: url(../Images/contact_us.webp);
+    background-size: cover;
+    background-position: center center;
+    height: 65vh;
+}
+
+#contact_us .overlay h1 {
+    font-size: 30px;
+    color: var(--main-color);
+    font-weight: 800;
+}
+
+
+/* * end of contact */
+
+.vh-50 {
+    height: 50vh;
+}

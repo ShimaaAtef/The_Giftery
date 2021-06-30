@@ -1,6 +1,6 @@
 :root {
     --main-color: #FE980F;
-    --nav-color: #08546C
+    --nav-color: #08546C;
 }
 
 body {
@@ -244,17 +244,17 @@ footer .footer_main {
     color: #fff
 }
 
-footer .footer_main .icon {
+.contact_icon {
     width: 45px;
     height: 45px;
     font-size: 1.25em;
     border-radius: 50%;
-    border: 1px solid #f8f8f8;
+    border: 1px solid var(--nav-color);
     transition: all .3s;
     -moz-transition: all .3s
 }
 
-footer .footer_main .icon:hover {
+.contact_icon:hover {
     background-color: var(--main-color);
     cursor: pointer;
     border-color: var(--main-color)
@@ -272,5 +272,43 @@ footer .wraper h4::after {
     height: 2px;
     background-color: var(--nav-color);
     bottom: -4px;
-    left: 4px
+    left: 4px;
+    background-color: cyan;
+    color: white;
+}
+
+
+/* wish list styles */
+
+.wish-header {
+    color: white;
+    height: 75vh;
+    background-image: url(../Images/wish-header.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.wish-table {
+    min-width: 400;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.wish-table thead th {
+    color: var(--main-color);
+    background-color: var(--nav-color);
+}
+
+.wish-table .wish-img img {
+    width: 70px;
+    height: 90px;
+}
+
+.wish-table tbody tr {
+    border-bottom: 1px solid #f3f3f3;
 }
