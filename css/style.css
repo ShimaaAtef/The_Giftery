@@ -294,3 +294,18 @@ footer .footer_sec {
     background-color: #2C2C2C;
     color: white;
 }
+
+
+/* wish list styles */
+
+.wish-header {
+    color: white;
+    height: 60vh;
+    background-image: url(../Images/wish-header.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bolder;
+}
